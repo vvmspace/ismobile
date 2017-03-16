@@ -1,4 +1,7 @@
-var isMobile = {
+var isMobileObject = {
+    any: function() {
+        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+    },
     Android: function() {
         return navigator.userAgent.match(/Android/i);
     },
@@ -13,8 +16,9 @@ var isMobile = {
     },
     Windows: function() {
         return navigator.userAgent.match(/IEMobile/i);
-    },
-    any: function() {
-        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
     }
 };
+
+function isMobile(){
+	return isMobileObject.any();
+}
