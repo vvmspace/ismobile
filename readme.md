@@ -1,4 +1,4 @@
-# isMobile() function - detedcting mobile device by JS
+# isMobile() function - detecting mobile device by JS
 
 Usage:
 if(isMobile()){
