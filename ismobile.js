@@ -1,6 +1,6 @@
 var isMobileObject = {
     any: function() {
-        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+        return (this.Android() || this.BlackBerry() || this.iOS() || this.Opera() || this.Windows());
     },
     Android: function() {
         return navigator.userAgent.match(/Android/i);
