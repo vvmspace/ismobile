@@ -4,3 +4,6 @@ Usage:
 if(isMobile()){
   alert('Mobile');
 }
+
+# How to detect Android device by JavaScript?
+Just use isAndroid() function
