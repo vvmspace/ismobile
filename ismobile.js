@@ -22,3 +22,7 @@ var isMobileObject = {
 function isMobile(){
 	return isMobileObject.any();
 }
+
+function isAndroid(){
+	return isMobileObject.Android();
+}
